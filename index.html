@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gaming Hub</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+      background:#0b0f17;
+      color:white;
+    }
+
+    .bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -2;
+    }
+
+    .video-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+    }
+
+    header{
+      padding:15px 30px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+
+    nav a{
+      margin:0 20px;
+      text-decoration:none;
+      color:white;
+      font-size:18px;
+      flex-wrap:wrap;
+      
+    }
+
+    nav a:hover{
+      color:rgb(34, 255, 255);
+    }
+
+    .search input{
+      max-width:300px;
+      padding:8px 15px;
+      border-radius:20px;
+      border:2px solid cyan;
+      outline:none;
+      background: transparent;
+      color:white;
+      width:100%;
+    }
+
+    .hero{
+      padding:120px 60px;
+    }
+
+    .hero h1{
+      font-size:60px;
+      text-shadow:0 0 20px cyan;
+    }
+
+    .hero p{
+      max-width:500px;
+      line-height:1.6;
+    }
+
+    .hero button{
+      padding:12px 35px;
+      border:none;
+      border-radius:25px;
+      background:cyan;
+      color:black;
+      font-size:16px;
+      cursor:pointer;
+      margin-top:20px;
+      transition:0.3s;
+    }
+
+    .hero button:hover{
+      transform:scale(1.05);
+      box-shadow:0 0 15px cyan;
+    }
+
+    .games{
+      padding:60px;
+    }
+
+    .games h2{
+      font-size:40px;
+      margin-bottom:30px;
+      text-shadow:0 0 10px violet;
+    }
+
+    .game-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:#111827;
+      border-radius:16px;
+      overflow:hidden;
+      transition:0.4s;
+    }
+
+    .card img{
+      width:100%;
+      height:320px;
+      object-fit:cover;
+    }
+
+    .card .info{
+      padding:15px;
+    }
+
+    .card:hover{
+      transform:translateY(-20px);
+      box-shadow:0 0 30px cyan;
+    }
+
+    .footer{
+      background: rgba(0,0,0,0.9);
+      padding: 30px 20px;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .footer .socials{
+      margin-bottom: 15px;
+    }
+
+    .footer .socials a{
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
+      font-size: 22px;
+      transition: 0.3s;
+    }
+
+    .footer .socials a:hover{
+      color: cyan;
+      text-shadow: 0 0 10px cyan;
+      transform: scale(1.2);
+    }
+
+    .footer p{
+      font-size: 14px;
+      color: #aaa;
+    }
+    
+    @media(max-width:768px){
+      header{
+        flex-direction:column;
+        align-items:center;
+      }
+
+      .logo{
+        margin-bottom:10px;
+      }
+
+      .search{
+        width:100%;
+        display:flex;
+      }
+
+      nav{
+        width:100%;
+        justify-content:center;
+      }
+
+      nav a{
+        font-size:14px;
+        margin:6px 8px;
+      }
+    }
+    .menu-wrapper{
+  position:relative;
+}
+
+.menu-icon{
+  font-size:24px;
+  cursor:pointer;
+  color:white;
+  padding:10px;
+}
+
+.side-menu{
+  position:absolute;
+  right:0;
+  top:40px;
+  background:#111827;
+  border-radius:10px;
+  display:none;
+  flex-direction:column;
+  min-width:200px;
+  box-shadow:0 0 20px cyan;
+}
+
+.side-menu a{
+  padding:20px;
+  text-decoration:none;
+  color:white;
+  border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.side-menu a:hover{
+  background:cyan;
+  color:black;
+}
+
+.menu-wrapper:hover .side-menu{
+  display:flex;
+}
+  </style>
+</head>
+
+<body>
+
+<video autoplay muted loop class="bg-video">
+  <source src="../practice.html/photosM/Video main.mp4" type="video/mp4">
+</video>
+
+<div class="video-overlay"></div>
+
+<header>
+  <div class="logo">
+    <img src="../../photosM/logo.jpg" height="77px">
+  </div>
+
+  <div class="search">
+    <input type="search" placeholder="Search games...">
+  </div>
+
+<div class="menu-wrapper">
+  <i class="fas fa-bars menu-icon"></i>
+
+  <div class="side-menu">
+    <a href="http://127.0.0.1:5500/html/practice.html/profile.html">Profile</a>
+    <a href="http://127.0.0.1:5500/html/practice.html/home.html">Top grossing</a>
+    <a href="http://127.0.0.1:5500/html/practice.html/category.html">Category</a>
+    <a href="http://127.0.0.1:5500/html/practice.html/tournmanents.html">Tournaments</a>
+    <a href="http://127.0.0.1:5500/html/practice.html/Friends.html#">Friends</a>
+    <a href="http://127.0.0.1:5500/html/practice.html/leaderboard.html">Leaderboard</a>
+    <a href="http://127.0.0.1:5500/html/practice.html/achievements.html">Achievements</a>
+    <a href="http://127.0.0.1:5500/html/practice.html/loginpage.html">Login</a>
+    <a href="http://127.0.0.1:5500/html/practice.html/support.html">support</a>
+  </div>
+</div>
+</header>
+
+<section class="hero">
+  <h1>ENTER THE GAMING HUB</h1>
+  <p>
+   Gaming is a virtual world where elimination isn’t the end—respawn awaits!!!
+  </p>
+ <a href="home.html">
+  <button>Explore Games</button>
+</a>
+</section>
+
+<section class="games">
+  <h2>Top Featured Games</h2>
+
+  <div class="game-grid">
+    <div class="card">
+      <img src="../../photosM/free fire.webp">
+      <div class="info">
+        <h3>Free Fire MAX</h3>
+        <p>⭐ 4.3 • Battle Royale</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../../photosM/pubg1.jpg">
+      <div class="info">
+        <h3>PUBG</h3>
+        <p>⭐ 4.2 • Adventure</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../../photosM/cyber-assassin2.jpg">
+      <div class="info">
+        <h3>Cyber Assassin</h3>
+        <p>⭐ 4.6 • Shooter</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="socials">
+    <a href="https://www.instagram.com/googleplay/"><i class="fab fa-instagram"></i></a>
+    <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+    <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+    <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+  </div>
+  <p>© 2026 Gaming Hub | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
