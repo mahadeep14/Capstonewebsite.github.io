@@ -1,0 +1,86 @@
+<svg viewBox="0 0 1200 460" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: auto; background: linear-gradient(135deg, #0a0e27 0%, #1a0033 100%);">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e27;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1a0033;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="charGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b00;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#ff0066;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#8b0000;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  <mask id="imagine-text-gaps-ol6xx3" maskUnits="userSpaceOnUse"><rect x="0" y="0" width="1200" height="460" fill="white"/><rect x="56" y="60.307193756103516" width="801.4364013671875" height="75.79549407958984" fill="black" rx="2"/><rect x="56" y="109.53768920898438" width="506.24151611328125" height="116.82149505615234" fill="black" rx="2"/><rect x="56" y="261.33319091796875" width="305.2581787109375" height="24.512998580932617" fill="black" rx="2"/><rect x="56" y="301.33319091796875" width="228.9554443359375" height="24.512998580932617" fill="black" rx="2"/><rect x="33.38926696777344" y="371.2049255371094" width="133.88681030273438" height="30.923311233520508" fill="black" rx="2"/></mask></defs>
+
+  <!-- Background -->
+  <rect width="1200" height="450" fill="url(#bgGrad)" style="stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Decorative shapes -->
+  <path d="M 0 0 L 300 0 L 250 450 L 0 450 Z" fill="#ffd700" opacity="0.08" style="fill:rgb(255, 215, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.08;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <path d="M 900 0 L 1200 0 L 1200 450 L 950 450 Z" fill="#00ffff" opacity="0.06" style="fill:rgb(0, 255, 255);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.06;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Yellow accent slashes -->
+  <line x1="200" y1="-50" x2="100" y2="400" stroke="#ffd700" stroke-width="40" opacity="0.15" mask="url(#imagine-text-gaps-ol6xx3)" style="fill:rgb(0, 0, 0);stroke:rgb(255, 215, 0);color:rgb(255, 255, 255);stroke-width:40px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.15;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <line x1="350" y1="-50" x2="250" y2="400" stroke="#ffd700" stroke-width="50" opacity="0.12" mask="url(#imagine-text-gaps-ol6xx3)" style="fill:rgb(0, 0, 0);stroke:rgb(255, 215, 0);color:rgb(255, 255, 255);stroke-width:50px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.12;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <line x1="500" y1="-50" x2="400" y2="400" stroke="#ffd700" stroke-width="45" opacity="0.1" mask="url(#imagine-text-gaps-ol6xx3)" style="fill:rgb(0, 0, 0);stroke:rgb(255, 215, 0);color:rgb(255, 255, 255);stroke-width:45px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Cyan accent -->
+  <polygon points="1200,0 900,0 1100,450 1200,450" fill="#00ffff" opacity="0.04" style="fill:rgb(0, 255, 255);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.04;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Left side text content -->
+  <text x="60" y="120" font-family="Arial, sans-serif" font-size="64" font-weight="bold" fill="#ffd700" letter-spacing="3" filter="url(#glow)" style="fill:rgb(255, 215, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:64px;font-weight:700;text-anchor:start;dominant-baseline:auto">
+    ESPORTS WORLD CUP:
+  </text>
+  <text x="60" y="200" font-family="Arial, sans-serif" font-size="80" font-weight="900" fill="#ffd700" letter-spacing="4" filter="url(#glow)" text-shadow="0 0 20px rgba(255,215,0,0.5)" style="fill:rgb(255, 215, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:80px;font-weight:900;text-anchor:start;dominant-baseline:auto">
+    FREE FIRE
+  </text>
+
+  <!-- Tournament info -->
+  <text x="60" y="280" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#00ffff" letter-spacing="2" style="fill:rgb(0, 255, 255);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:18px;font-weight:700;text-anchor:start;dominant-baseline:auto">
+    GROUP STAGE: JULY 19 - 12
+  </text>
+  <text x="60" y="320" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ff00ff" letter-spacing="2" style="fill:rgb(255, 0, 255);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:18px;font-weight:700;text-anchor:start;dominant-baseline:auto">
+    FINALS: JULY 13 - 14
+  </text>
+
+  <!-- Right side: Character illustration -->
+  <!-- Head -->
+  <circle cx="950" cy="90" r="45" fill="url(#charGrad)" opacity="0.95" filter="url(#glow)" style="stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.95;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  
+  <!-- Body -->
+  <ellipse cx="950" cy="180" rx="55" ry="70" fill="url(#charGrad)" opacity="0.9" style="stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.9;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  
+  <!-- Armor/Jacket detail -->
+  <path d="M 920 150 Q 900 170 910 250 L 950 280 L 990 250 Q 1000 170 980 150" fill="#ff0066" opacity="0.7" style="fill:rgb(255, 0, 102);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.7;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  
+  <!-- Arms -->
+  <path d="M 910 170 L 840 200 L 860 280 L 920 240" fill="url(#charGrad)" opacity="0.85" style="stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.85;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <path d="M 990 170 L 1060 200 L 1040 280 L 980 240" fill="url(#charGrad)" opacity="0.85" style="stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.85;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  
+  <!-- Legs -->
+  <path d="M 930 250 L 910 400 L 950 410 L 955 260" fill="url(#charGrad)" opacity="0.8" style="stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.8;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <path d="M 970 250 L 990 400 L 950 410 L 945 260" fill="url(#charGrad)" opacity="0.8" style="stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.8;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Hair/Head detail -->
+  <path d="M 920 50 Q 950 20 980 50 Q 990 80 980 100 Q 950 110 920 100 Q 910 80 920 50" fill="#8b0000" opacity="0.8" style="fill:rgb(139, 0, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.8;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Glow around character -->
+  <circle cx="950" cy="200" r="110" fill="none" stroke="#ffd700" stroke-width="2" opacity="0.4" style="fill:none;stroke:rgb(255, 215, 0);color:rgb(255, 255, 255);stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.4;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <circle cx="950" cy="200" r="130" fill="none" stroke="#ff00ff" stroke-width="1" opacity="0.2" style="fill:none;stroke:rgb(255, 0, 255);color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.2;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Accent marks -->
+  <path d="M 880 140 L 850 120" stroke="#ffd700" stroke-width="4" stroke-linecap="round" opacity="0.8" style="fill:rgb(0, 0, 0);stroke:rgb(255, 215, 0);color:rgb(255, 255, 255);stroke-width:4px;stroke-linecap:round;stroke-linejoin:miter;opacity:0.8;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <path d="M 1020 140 L 1050 120" stroke="#ffd700" stroke-width="4" stroke-linecap="round" opacity="0.8" style="fill:rgb(0, 0, 0);stroke:rgb(255, 215, 0);color:rgb(255, 255, 255);stroke-width:4px;stroke-linecap:round;stroke-linejoin:miter;opacity:0.8;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Logo area -->
+  <rect x="40" y="360" width="120" height="60" fill="none" stroke="#ffd700" stroke-width="2" opacity="0.6" rx="8" style="fill:none;stroke:rgb(255, 215, 0);color:rgb(255, 255, 255);stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.6;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="100" y="395" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#ffd700" text-anchor="middle" style="fill:rgb(255, 215, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:24px;font-weight:700;text-anchor:middle;dominant-baseline:auto">
+    FREE FIRE
+  </text>
+</svg>
