@@ -1,157 +1,139 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sign up</title>
-
+<title>Sign up</title>
 
 <style>
 body{
     margin:0;
-    font-family: Arial, sans-serif;
+    font-family:Arial, sans-serif;
 }
-
 .video-bg{
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    z-index: -2;
+    position:fixed;
+    width:100vw;
+    height:100vh;
+    object-fit:cover;
+    z-index:-2;
     top:0;
     left:0;
 }
-
 .video-overlay{
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0,0,0,0.55);
-    z-index: -1;
+    position:fixed;
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,0.55);
+    z-index:-1;
     top:0;
     left:0;
 }
-
 .login-box{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-    width: 320px;
-    height: 500px;
-    background: rgba(0,0,0,0.75);
-    border: 3px solid aqua;
-    padding: 30px;
-    box-sizing: border-box;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:320px;
+    height:500px;
+    background:rgba(0,0,0,0.75);
+    border:3px solid aqua;
+    padding:30px;
+    box-sizing:border-box;
 }
-
-
 .login-box h2{
-    text-align: center;
-    color: aqua;
-    margin-bottom: 30px;
-    letter-spacing: 1px;
+    text-align:center;
+    color:aqua;
+    margin-bottom:30px;
 }
-
-
 .login-box label{
-    color: aqua;
-    font-size: 15px;
+    color:aqua;
 }
-
 .login-box input{
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0 20px;
-    border: none;
-    outline: none;
+    width:100%;
+    padding:10px;
+    margin:8px 0 20px;
+    border:none;
+    outline:none;
 }
-
-
 .login-box input[type="submit"]{
-    background: aqua;
-    color: black;
-    font-weight: bold;
-    cursor: pointer;
-    border: none;
+    background:aqua;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
 }
-
-#error-msg {
-    color: red;
-    font-size: 14px;
-    margin-bottom: 10px;
-    text-align: center;
+#error-msg{
+    color:red;
+    font-size:14px;
+    text-align:center;
 }
 </style>
 </head>
+
 <body>
 
 <video autoplay muted loop class="video-bg">
-    <source src="Signup BG.mp4" type="video/mp4">
+<source src="signup-bg.mp4" type="video/mp4">
 </video>
 
 <div class="video-overlay"></div>
 
 <div class="login-box">
-    <h2>Sign Up</h2>
+<h2>Sign Up</h2>
 
-    <div id="error-msg"></div>
+<div id="error-msg"></div>
 
-    <form onsubmit="return validateForm()">
-        <label>Username</label>
-        <input type="text" id="username">
+<form onsubmit="return validateForm()">
+<label>Username</label>
+<input type="text" id="username">
 
-        <label>Email</label>
-        <input type="email" id="email">
+<label>Email</label>
+<input type="email" id="email">
 
-        <label>Password</label>
-        <input type="password" id="password">
+<label>Password</label>
+<input type="password" id="password">
 
-        <label>Confirm Password</label>
-        <input type="password" id="confirmPassword">
+<label>Confirm Password</label>
+<input type="password" id="confirmPassword">
 
-        <input type="submit" value="Sign Up">
-    </form>
+<input type="submit" value="Sign Up">
+</form>
 </div>
 
 <script>
-function validateForm() {
-    let user = document.getElementById("username").value.trim();
-    let email = document.getElementById("email").value.trim();
-    let pass = document.getElementById("password").value.trim();
-    let confirmPass = document.getElementById("confirmPassword").value.trim();
-    let error = document.getElementById("error-msg");
+function validateForm(){
+let user=document.getElementById("username").value.trim();
+let email=document.getElementById("email").value.trim();
+let pass=document.getElementById("password").value.trim();
+let confirmPass=document.getElementById("confirmPassword").value.trim();
+let error=document.getElementById("error-msg");
 
-    error.innerHTML = "";
+error.innerHTML="";
 
-    if (user === "" || email === "" || pass === "" || confirmPass === "") {
-        error.innerHTML = "Please fill all fields!";
-        return false;
-    }
+if(user===""||email===""||pass===""||confirmPass===""){
+error.innerHTML="Please fill all fields!";
+return false;
+}
 
-   
-    if (!user.match(/^[a-zA-Z0-9]+$/)) {
-        error.innerHTML = "Invalid username! (Only letters and numbers allowed)";
-        return false;
-    }
+if(!user.match(/^[a-zA-Z0-9]+$/)){
+error.innerHTML="Invalid username!";
+return false;
+}
 
-    if (!email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
-        error.innerHTML = "Invalid email address!";
-        return false;
-    }
+if(!email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)){
+error.innerHTML="Invalid email!";
+return false;
+}
 
-    if (pass.length < 4) {
-        error.innerHTML = "Password must be at least 4 characters!";
-        return false;
-    }
+if(pass.length<4){
+error.innerHTML="Password too short!";
+return false;
+}
 
-   
-    if (pass !== confirmPass) {
-        error.innerHTML = "Passwords do not match!";
-        return false;
-    }
+if(pass!==confirmPass){
+error.innerHTML="Passwords do not match!";
+return false;
+}
 
-    alert("Signup Successful!");
-    return true;
+alert("Signup Successful!");
+return true;
 }
 </script>
 
