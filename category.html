@@ -1,244 +1,197 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>
-        CategorY
-    </title>
-
+    <title>Category</title>
 <style>
-    body{
-        margin:0;
-        font-family:Arial, sans-serif;
-        background: #8e18e9;    
-       color:white;
-    }
-    .bg{
-        position:fixed;
-        width:100vw;
-        height:100vh;
-        object-fit:cover;
-        z-index:-1;
-    }
-    header{
-        padding:20px 25px;
-        display:flex;
-        align-items: center;
-        justify-content:space-between;
-    }
-    .bg-video{
-        position:fixed;
-        width: 100vw;
-        height:100vh;
-        z-index:-2;
-        object-fit:cover;
-        top:0;
-        left:0;
-
-
-    }
-    .video-overlay{
-          position:fixed;
-        width: 100vw;
-        height:100vh;
-        z-index:-2;
-        object-fit:cover;
-        top:0;
-        left:0;
-        background:rgba(0, 0, 0, 0.6);
-
-    }
-    .games{
-        padding:60px;
-            }
-    .games h2{
-        font-size: 40px;
-        margin-top:0;
-        text-align: center;
-        position:relative;
-        text-shadow:0 0 10px cyan, 0 0 20px cyan;
-    }
-    
-    .game-grid{
-        display:grid;
-        grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
-        gap:40px;
-    }
-    .card{
-        background:#111827;
-        border-radius:8px;
-        overflow:hidden;
-        transition:0.4s;
-    }
-    .card img{
-        width:100%;
-        height: 260px;
-        object-fit:cover;
-    }
-    .card .info{
-        padding:20px;
-
-    }
-    .card:hover{
-        transform:translateY(-20px);
-        box-shadow:0 0 30px cyan;
-            }
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#8e18e9;
+    color:white;
+}
+.bg-video{
+    position:fixed;
+    width:100vw;
+    height:100vh;
+    z-index:-2;
+    object-fit:cover;
+    top:0;
+    left:0;
+}
+.video-overlay{
+    position:fixed;
+    width:100vw;
+    height:100vh;
+    z-index:-1;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.6);
+}
+header{
+    padding:20px 25px;
+    display:flex;
+    justify-content:space-between;
+}
+.games{
+    padding:60px;
+}
+.games h2{
+    font-size:40px;
+    text-align:center;
+    text-shadow:0 0 10px cyan,0 0 20px cyan;
+}
+.game-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:40px;
+}
+.card{
+    background:#111827;
+    border-radius:8px;
+    overflow:hidden;
+    transition:0.4s;
+}
+.card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+.card .info{
+    padding:20px;
+}
+.card:hover{
+    transform:translateY(-20px);
+    box-shadow:0 0 30px cyan;
+}
 </style>
 </head>
+
+<body>
+
 <header>
-    <video class="bg-video" autoplay muted loop>
-        <source src="../../photosM/bg category.mp4" type="video/mp4">
-
-    </video>
-    <div class="video-overlay"></div>
-</div>
+<video class="bg-video" autoplay muted loop>
+    <source src="Category BG.mp4" type="video/mp4">
+</video>
+<div class="video-overlay"></div>
 </header>
+
 <section class="games">
-    <h2>Categories</h2>
-    <div class="game-grid">
-        <div class="card">
-           <a href="action.html"><img src="../../photosM/action.jpg" alt="game action"></a>
-            <div class="info">
-               <h3>⍟Action</h3>
-            </div>
-        </div>
-        <div class="card">
-            <a href="shooter.html">
-                <img src="../../photosM/shooter.jpeg" alt="game shooter">
-            </a>
-            <div class="info">
-                <h3>⍟Shooter</h3>
-            </div>
-        </div>
-        <div class="card">
-           <a href="sports.html"> <img src="../../photosM/sports.avif" alt="game sports"></a>
-            <div class="info">
-                <h3>⍟Sports</h3>
-            </div>
-        </div>
-        <div class="card">
-            <img src="../../photosM/RPG.webp" alt="game rpg">
-            <div class="info">
-                <h3>⍟RPG</h3>
-            </div>
+<h2>Categories</h2>
 
-        </div>
-            <div class="card">
-                <img src="../../photosM/strategy.jpg" alt="game strategy">
-                <div class="info">
-                    <h3>⍟Strategy</h3>
-                </div>
-            </div>
-            <div class="card">
-                <img src="../../photosM/adventure.jpg" alt="game adventure">
-                <div class="info">
-                    <h3>⍟Adventure</h3>
-                </div>
-            </div>
+<div class="game-grid">
 
-            <div class="card">
-                <img src="../../photosM/puzzle.avif" alt="game puzzle">
-                <div class="info">
-                    <h3>⍟Puzzle</h3>
-    </div>
-            </div>
-            <div class="card">
-                <img src="../../photosM/racing.jpg" alt="game racing">
-                <div class="info">
-                    <h3>⍟Racing</h3>
-                </div>
-            </div>
-    <div class="card">
-                <img src="../../photosM/board games.webp" alt="game board">
-                <div class="info">
-                    <h3>⍟Board Game</h3>
-                </div>
-            </div>
-            <div class="card">
-                <img src="../../photosM/casual1.webp" alt="game casual">
-                <div class="info">
-                    <h3>⍟Casual</h3>
-                </div>
-            </div>
-            <div class="card">
-                <img src="../../photosM/simulation.avif" alt="game simulation">
-                <div class="info">
-                    <h3>⍟Simulation</h3>
-                </div>
-            </div>
-            <div class="card">
-                <img src="../../photosM/fighting.jpg" alt="game fighting">
-                <div class="info">
-                    <h3>⍟Fighting</h3>
-                </div>
-            </div>
-            <div class="card">
-                <img src="../../photosM/idle.webp" alt="game idle">
-                <div class="info">
-                    <h3>⍟Idle</h3>
-                </div>
-    </div>
+<div class="card">
+<a href="action.html"><img src="action.jpg"></a>
+<div class="info"><h3>⍟Action</h3></div>
+</div>
 
-            <div class="card">
-                <img src="../../photosM/music.avif" alt="game music">
-                <div class="info">
-                    <h3>⍟Music</h3>
-                </div>
-        </div>
-            <div class="card">
-                <img src="../../photosM/educational.avif" alt="game educational">
-                <div class="info">
-                    <h3>⍟Educational</h3>
-                </div>
-            </div>
-            <div class="card">
-                <img src="../../photosM/arcade1.avif" alt="game arcade">
-                <div class="info">
-                    <h3>⍟Arcade</h3>
-    </div>
-    </div>
-    <div class="card">
-                <img src="../../photosM/virtual reality.jpg" alt="game virtual reality">
-                <div class="info">
-                    <h3>⍟Virtual Reality</h3>
-                </div>
-            </div>
-            <div class="card">
-                <img src="../../photosM/augmented-reality.jpg" alt="game augmented reality">
-                <div class="info">
-                    <h3>⍟Augmented Reality</h3>
-                </div>
-            </div>
-            <div class="card">
-                <img src="../../photosM/indie.avif" alt="game indie">
-                <div class="info">
-                    <h3>⍟Indie</h3>
-                </div>
-    </div>
-            <div class="card">
-                <img src="../../photosM/multiplayer.avif" alt="game multiplayer">
-                <div class="info">
-                    <h3>⍟Multiplayer</h3>
-                </div>
-            </div>
-            <div class="card">
-                <img src="../../photosM/sandpaper.avif" alt="game sandbox">
-                <div class="info">
-                    <h3>⍟Sandbox</h3>
-                </div>
-            </div>
-            <div class="card">
-                <img src="../../photosM/roguelike.webp" alt="game roguelike">
-                <div class="info">
-                    <h3>⍟Roguelike</h3>
-                </div>
-                </div>
-            <div class="card">
-                <img src="../../photosM/party.jpg" alt="game party">
-                <div class="info">
-                    <h3>⍟Party</h3>
-                </div>
-                </div>
-    </div>
+<div class="card">
+<a href="shooter.html"><img src="shooter.jpeg"></a>
+<div class="info"><h3>⍟Shooter</h3></div>
+</div>
+
+<div class="card">
+<a href="sports.html"><img src="sports.avif"></a>
+<div class="info"><h3>⍟Sports</h3></div>
+</div>
+
+<div class="card">
+<img src="RPG.webp">
+<div class="info"><h3>⍟RPG</h3></div>
+</div>
+
+<div class="card">
+<img src="strategy.jpg">
+<div class="info"><h3>⍟Strategy</h3></div>
+</div>
+
+<div class="card">
+<img src="adventure.jpg">
+<div class="info"><h3>⍟Adventure</h3></div>
+</div>
+
+<div class="card">
+<img src="puzzle.jpg">
+<div class="info"><h3>⍟Puzzle</h3></div>
+</div>
+
+<div class="card">
+<img src="racing.jpg">
+<div class="info"><h3>⍟Racing</h3></div>
+</div>
+
+<div class="card">
+<img src="board games.webp">
+<div class="info"><h3>⍟Board Game</h3></div>
+</div>
+
+<div class="card">
+<img src="casual1.webp">
+<div class="info"><h3>⍟Casual</h3></div>
+</div>
+
+<div class="card">
+<img src="simulation.avif">
+<div class="info"><h3>⍟Simulation</h3></div>
+</div>
+
+<div class="card">
+<img src="idle.webp">
+<div class="info"><h3>⍟Idle</h3></div>
+</div>
+
+<div class="card">
+<img src="music.avif">
+<div class="info"><h3>⍟Music</h3></div>
+</div>
+
+<div class="card">
+<img src="educational.avif">
+<div class="info"><h3>⍟Educational</h3></div>
+</div>
+
+<div class="card">
+<img src="arcade1.avif">
+<div class="info"><h3>⍟Arcade</h3></div>
+</div>
+
+<div class="card">
+<img src="virtual reality.jpg">
+<div class="info"><h3>⍟Virtual Reality</h3></div>
+</div>
+
+<div class="card">
+<img src="augmented-reality.jpg">
+<div class="info"><h3>⍟Augmented Reality</h3></div>
+</div>
+
+<div class="card">
+<img src="indie.avif">
+<div class="info"><h3>⍟Indie</h3></div>
+</div>
+
+<div class="card">
+<img src="multiplayer.avif">
+<div class="info"><h3>⍟Multiplayer</h3></div>
+</div>
+
+<div class="card">
+<img src="sandpaper.avif">
+<div class="info"><h3>⍟Sandbox</h3></div>
+</div>
+
+<div class="card">
+<img src="roguelike.webp">
+<div class="info"><h3>⍟Roguelike</h3></div>
+</div>
+
+<div class="card">
+<img src="party.jpg">
+<div class="info"><h3>⍟Party</h3></div>
+</div>
+
+</div>
 </section>
+
 </body>
 </html>
