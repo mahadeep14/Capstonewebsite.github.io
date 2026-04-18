@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+  <title>
+   HOME-GAMING HUB
+  </title>
+
+  <style>
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+      background:#0b0f17;
+      color:white;
+    }
+
+    /* background */
+    .bg{
+      position:fixed;
+      width:100vw;
+      height:100vh;
+      object-fit:cover;
+      z-index:-1;
+    }
+
+    header{
+      padding:20px 50px;
+      display:flex;/*horizontal layout*/
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    nav a{
+      margin:0 20px;
+      text-decoration:none;
+      color:white;
+      font-size:18px;
+    }
+/*hover is a pseudo class in css*/
+    nav a:hover{/*Apply these styles when the mouse pointer is placed over an element.”*/
+      color:rgb(34, 255, 255);
+    }
+
+    /* HERO */
+    .hero{
+      padding:80px 60px;
+    }
+
+    .hero h1{
+      font-size:60px;
+      text-shadow:0 0 20px cyan;
+    }
+
+    .hero p{
+      max-width:500px;
+      line-height:1.6;
+    }
+
+    .hero button{
+      padding:12px 35px;
+      border:none;
+      border-radius:25px;
+      background:cyan;
+      color:black;
+      font-size:16px;
+      cursor:pointer;
+      margin-top:20px;
+    }
+
+    /* GAME CARDS */
+    .games{
+      padding: 60px;
+      
+    }
+
+    .games h2{
+  font-size:42px;
+  text-align:center;
+  margin-top:0 ;
+  
+  text-shadow:
+    0 0 10px cyan,
+    0 0 20px cyan;
+}
+
+    .game-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));/*cards will adjust based on screen size*/
+      gap:30px;/*space between the cards*/
+    }
+
+    .card{
+      background:#111827;
+      border-radius:8px;  
+      overflow:hidden;
+      transition:0.4s;
+    }
+
+    .card img{
+      width:100%;
+      height:200px;
+      object-fit:cover;
+    }
+
+    .card .info{
+      padding:20px;
+    }
+
+    .card:hover{
+      transform:translateY(-20px);/*move the card up when curser is placed on it*/
+      box-shadow:0 0 30px cyan;
+    }
+   .bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.video-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+  </style>
+</head>
+
+<body>
+<video autoplay muted loop class="bg-video">
+  <source src="../../photosM/vecteezy_abstract-floating-liquid-from-energy-purple-particles_25466932.mp4" type="video/mp4">
+  </video>
+<div class="video-overlay"></div>
+
+
+<header>
+
+
+</header>
+
+
+<section class="games">
+  <h2>Top Picks for You</h2>
+
+  <div class="game-grid">
+    <div class="card">
+      <img src="../../photosM/ludo-king-play-pc-download.png">
+      <div class="info">
+        <h3>Ludo King</h3>
+        </h3>
+        <p>⭐ 4.0 • Board Game</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../../photosM/free fire.webp">
+      <div class="info">
+        <h3>Free Fire MAX</h3>
+        <p>⭐ 4.3 • Battle Royale</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../../photosM/carrom.png">
+      <div class="info">
+        <h3>carrom pool:Disc game</h3>
+        <p>⭐ 4.6 • Billards</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../../photosM/crickett.jpg">
+      <div class="info">
+        <h3>Cricket League</h3>
+        <p>⭐ 4.5 • Sports</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../../photosM/cool game.png">
+      <div class="info">
+        <h3>Cool Cave</h3>
+        <p>⭐ 4.0 • Adventure</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../../photosM/pizza-ready-logo.avif">
+      <div class="info">
+        <h3>Pizza Ready</h3>
+        <p>⭐ 4.2 • Cooking</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../../photosM/HUNTER ASSIAN.jpg">
+      <div class="info">
+        <h3>Hunter Assassin</h3>
+        <p>⭐ 4.0 • Action</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="../../photosM/subway.png">
+      <div class="info">
+        <h3>Subway Princess Runner</h3>
+        <p>⭐ 4.6 • Runner</p>
+      </div>
+    </div>
+  <div class="card">
+    <img src="../../photosM/bike ride.jpg">
+    <div class="info">
+      <h3>Indian Bikes Riding 3D</h3>
+      <p>⭐ 4.2 • Action</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="../../photosM/Subway_Surfer.jpg">
+    <div class="info">
+      <h3>Subway Surfer</h3>
+      <p>⭐ 4.5 • Runner</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="../../photosM/zupee.png">
+    <div class="info">
+      <h3>Play only games by zupee</h3>
+      <p>⭐ 4.1 • Board Game</p>
+    </div>
+    </div>
+
+    <div class="card">
+      <img src="../../photosM/bike gamw.webp">
+      <div class="info">
+        <h3>Bike Wheelie Stunt Master Game</h3>
+        <p>⭐ 4.3 • Sports</p>
+      </div>
+      </div>
+  </div>
+</section>
+</body>
+</html>

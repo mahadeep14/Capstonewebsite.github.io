@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Action Games</title>
+
+<style>
+body{
+  background:#0b0f17;
+  color:white;
+  font-family:Arial;
+  padding:40px;
+}
+
+h1{
+  text-align:center;
+  color:cyan;
+  text-shadow:0 0 15px cyan;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+  margin-top:40px;
+}
+
+.card{
+  background:#111827;
+  border-radius:15px;
+  overflow:hidden;
+  transition:0.3s;
+}
+
+.card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 0 20px cyan;
+}
+</style>
+</head>
+
+<body>
+
+<h1>⚔ Action Games</h1>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3UGCgzOfx0mE6ZpNdgLiacsxi3Gv5Zrawuw&s">
+<p>Assassin Strike</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5">
+<p>War Zone</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511512578047-dfb367046420">
+<p>Survival X</p>
+</div>
+
+</div>
+
+</body>
+</html>

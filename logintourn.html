@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login tournments</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+}
+
+/* BACKGROUND VIDEO */
+.video-bg{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -2;
+    top:0;
+    left:0;
+}
+
+/* DARK OVERLAY */
+.video-overlay{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.55);
+    z-index: -1;
+    top:0;
+    left:0;
+}
+
+/* LOGIN BOX */
+.login-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 320px;
+    height: auto;
+
+    background: rgba(0,0,0,0.75);
+    border: 3px solid aqua;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/* TITLE */
+.login-box h2{
+    text-align: center;
+    color: aqua;
+    margin-bottom: 25px;
+}
+
+/* LABEL */
+.login-box label{
+    color: aqua;
+    font-size: 15px;
+}
+
+/* INPUT */
+.login-box input{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px;
+    border: none;
+    outline: none;
+}
+
+/* BUTTON */
+.login-box input[type="submit"]{
+    background: aqua;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ERROR MESSAGE */
+.error{
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* REGISTER LINK */
+.register{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.register a{
+    color: aqua;
+    text-decoration: none;
+}
+
+.register a:hover{
+    text-decoration: underline;
+}
+#error-msg {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+</style>
+</head>
+
+<body>
+<video autoplay muted loop class="video-bg">
+    <source src="../../photosM/vecteezy_fantasy-animation-scene-a-glimpse-beyond-a-vibrant-alien_57428411.mp4" type="video/mp4">
+</video>
+
+<div class="video-overlay"></div>
+
+<!-- LOGIN BOX -->
+<div class="login-box">
+    <h2>Login</h2>
+
+    <div id="error-msg" class="error"></div>
+
+    <form onsubmit="return validateForm()">
+        <label>Username</label>
+        <input type="text" id="username">
+
+        <label>Password</label>
+        <input type="password" id="password">
+
+        <input type="submit" value="Login">
+    </form>
+
+    <!-- REGISTER LINK -->
+    <div class="register">
+    </div>
+         <a href="http://127.0.0.1:5500/html/practice.html/newsignup.html"></a>
+    </div>
+</div>
+
+<!-- JAVASCRIPT -->
+<script>
+function validateForm() {
+    let user = document.getElementById("username").value.trim();
+    let pass = document.getElementById("password").value.trim();
+    let error = document.getElementById("error-msg");
+
+    // Clear previous error
+    error.innerHTML = "";
+
+    // 1. Empty fields check
+    if (user === "" || pass === "") {
+        error.innerHTML = "Please fill all fields!";
+        return false;
+    }
+
+    // 2. Username validation (only letters & spaces)
+    if (!user.match(/^[a-zA-Z ]+$/)) {
+        error.innerHTML = "Invalid username! (Only letters allowed)";
+        return false;
+    }
+
+    // 3. Password validation
+    if (pass.length < 4) {
+        error.innerHTML = "Password must be at least 4 characters!";
+        return false;
+    }
+
+    // 4. Success
+    alert("Login Successful!");
+    return true;
+}
+</script>
+
+
+</body>
+</html>

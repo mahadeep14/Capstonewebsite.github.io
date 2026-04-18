@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Leaderboard - Gaming Hub</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family:Arial, sans-serif;
+      background:#0b0f17;
+      color:white;
+      padding:40px;
+    }
+
+    h1{
+      text-align:center;
+      color:cyan;
+      text-shadow:0 0 15px cyan;
+    }
+
+    .table{
+      max-width:800px;
+      margin:40px auto;
+      background:#111827;
+      border-radius:15px;
+      overflow:hidden;
+    }
+
+    .row{
+      display:flex;
+      justify-content:space-between;
+      padding:15px 20px;
+      border-bottom:1px solid #222;
+      transition:0.3s;
+    }
+
+    .row:hover{
+      background:#1f2937;
+      box-shadow:0 0 10px violet;
+    }
+
+    .header{
+      background:#020617;
+      font-weight:bold;
+      color:cyan;
+    }
+
+    .rank{
+      width:50px;
+    }
+
+    .name{
+      flex:1;
+    }
+
+    .score{
+      width:100px;
+      text-align:right;
+    }
+
+    .top1{
+      color:gold;
+    }
+
+    .top2{
+      color:silver;
+    }
+
+    .top3{
+      color:#cd7f32;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<h1>🏆 Leaderboard</h1>
+
+<div class="table">
+
+  <div class="row header">
+    <div class="rank">#</div>
+    <div class="name">Player</div>
+    <div class="score">Points</div>
+  </div>
+
+  <div class="row top1">
+    <div class="rank">1</div>
+    <div class="name">Mahadeep_14</div>
+    <div class="score">6969</div>
+  </div>
+
+  <div class="row top2">
+    <div class="rank">2</div>
+    <div class="name">⚡ KillerPro</div>
+    <div class="score">2950</div>
+  </div>
+
+  <div class="row top3">
+    <div class="rank">3</div>
+    <div class="name">🎯 SniperGod</div>
+    <div class="score">2700</div>
+  </div>
+
+  <div class="row">
+    <div class="rank">4</div>
+    <div class="name">DarkKnight</div>
+    <div class="score">2500</div>
+  </div>
+
+  <div class="row">
+    <div class="rank">5</div>
+    <div class="name">GhostRider</div>
+    <div class="score">2300</div>
+  </div>
+
+</div>
+
+</body>
+</html>

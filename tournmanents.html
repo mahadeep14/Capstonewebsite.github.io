@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tournaments</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+            background: #0b0f17;
+            color: white;
+        }
+
+        /* BACKGROUND VIDEO */
+        .bg-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+        }
+
+        .video-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: -1;
+        }
+
+        /* HEADER */
+        .header {
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: cyan;
+            text-shadow: 0 0 10px cyan;
+        }
+
+        /* ===== SLIDER ===== */
+        .slider {
+            position: relative;
+            width: 90%;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 15px;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.6s ease;
+        }
+
+        .slide {
+            min-width: 100%;
+            position: relative;
+        }
+
+        /* 🔥 FIXED SIZE */
+        .slide img {
+            width: 100%;
+            height: 370px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .slide-content {
+            position: absolute;
+            bottom: 25px;
+            left: 30px;
+        }
+
+        .slide-content h2 {
+            font-size: 28px;
+            text-shadow: 0 0 10px cyan;
+        }
+
+        .slide-content button {
+            padding: 8px 16px;
+            font-size: 14px;
+            border: none;
+            background: cyan;
+            color: black;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0,0,0,0.5);
+            border: none;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .prev { left: 10px; }
+        .next { right: 10px; }
+
+        /* ===== TOURNAMENTS ===== */
+        .tournaments {
+            padding: 40px 50px;
+        }
+
+        .tournaments h2 {
+            font-size: 40px;
+            text-align: center;
+            text-shadow: 0 0 10px cyan, 0 0 20px cyan;
+        }
+
+        .tournament-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .tournament-card {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            transition: 0.3s;
+            border: 1px solid rgba(0, 255, 255, 0.2);
+        }
+
+        .tournament-card:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 0 20px cyan;
+        }
+
+        .tournament-card h3 {
+            font-size: 22px;
+        }
+
+        .tournament-card p {
+            color: #ccc;
+        }
+
+        /* 📱 MOBILE */
+        @media (max-width: 768px) {
+            .slide img {
+                height: 200px;
+            }
+
+            .slide-content h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- BACKGROUND -->
+    <video class="bg-video" autoplay muted loop>
+        <source src="../../photosM/vecteezy_futuristic-neon-tunnel-bright-cyberspace-hall-party-road_49532780.mov" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1>GAMING HUB</h1>
+        <nav>
+            <a href="#">Sign up</a>
+        </nav>
+    </header>
+
+    <!-- ===== SLIDER ===== -->
+    <div class="slider">
+        <div class="slides">
+
+            <div class="slide">
+                <img src="../../photosM/valvarant.png">
+                <div class="slide-content">
+                    <h2>VALORANT CHAMPIONS</h2>
+                    <button>Watch Now</button>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="../../photosM/cs2.png">
+                <div class="slide-content">
+                    <h2>CS2 MAJOR</h2>
+                    <button>Explore</button>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="../../photosM/leagueof legends.png">
+                <div class="slide-content">
+                    <h2>WORLDS 2026</h2>
+                    <button>Join Now</button>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
+
+    <!-- ===== TOURNAMENTS ===== -->
+    <section class="tournaments">
+        <h2>TOURNAMENTS</h2>
+
+        <div class="tournament-list">
+            <div class="tournament-card"><h3>CS:GO Battle</h3><p>Prize: $100</p></div>
+            <div class="tournament-card"><h3>Fortnite Weekly</h3><p>Prize: $60</p></div>
+            <div class="tournament-card"><h3>Valorant Clash</h3><p>Prize: $150</p></div>
+            <div class="tournament-card"><h3>PUBG Championship</h3><p>Prize: $200</p></div>
+            <div class="tournament-card"><h3>Apex Legends</h3><p>Prize: $120</p></div>
+            <div class="tournament-card"><h3>League of Legends</h3><p>Prize: $180</p></div>
+            <div class="tournament-card"><h3>Overwatch</h3><p>Prize: $90</p></div>
+            <div class="tournament-card"><h3>Rainbow Six</h3><p>Prize: $110</p></div>
+            <div class="tournament-card"><h3>Warzone</h3><p>Prize: $130</p></div>
+            <div class="tournament-card"><h3>Rocket League</h3><p>Prize: $80</p></div>
+            <div class="tournament-card"><h3>GTA Online</h3><p>Prize: $70</p></div>
+            <div class="tournament-card"><h3>FIFA Cup</h3><p>Prize: $250</p></div>
+        </div>
+    </section>
+
+    <!-- ===== JS ===== -->
+    <script>
+        let index = 0;
+        const slides = document.querySelector(".slides");
+        const totalSlides = document.querySelectorAll(".slide").length;
+
+        function showSlide(i) {
+            if (i >= totalSlides) index = 0;
+            else if (i < 0) index = totalSlides - 1;
+            else index = i;
+
+            slides.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        document.querySelector(".next").onclick = () => showSlide(index + 1);
+        document.querySelector(".prev").onclick = () => showSlide(index - 1);
+
+        setInterval(() => {
+            showSlide(index + 1);
+        }, 3000);
+    </script>
+
+</body>
+</html>

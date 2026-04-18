@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Friends - Gaming Hub</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+      background:#0b0f17;
+      color:white;
+    }
+
+    header{
+      padding:20px 50px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    header h1{
+      color:cyan;
+      text-shadow:0 0 15px cyan;
+    }
+
+    nav a{
+      margin:0 20px;
+      text-decoration:none;
+      color:white;
+      font-size:18px;
+    }
+
+    nav a:hover{
+      color:cyan;
+    }
+
+    /* SECTION */
+    .social-section{
+      padding:60px;
+      display:flex;
+      flex-direction:column;
+      gap:30px;
+      max-width:800px;
+      margin:auto;
+    }
+
+    .card{
+      background:#111827;
+      padding:25px;
+      border-radius:18px;
+      transition:0.3s;
+      box-shadow:0 0 10px rgba(138,43,226,0.2);
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+      box-shadow:0 0 30px violet;
+    }
+
+    .card h2{
+      color:violet;
+      text-shadow:0 0 10px violet;
+      margin-bottom:15px;
+    }
+
+    .card p{
+      margin:10px 0;
+      color:#ccc;
+      font-size:16px;
+    }
+
+    button{
+      margin-top:15px;
+      padding:10px 25px;
+      border:none;
+      border-radius:25px;
+      background:cyan;
+      color:black;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    button:hover{
+      box-shadow:0 0 15px cyan;
+      transform:scale(1.05);
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Friends</h1>
+ 
+</header>
+
+<section class="social-section">
+
+  <!-- FRIENDS -->
+  <div class="card">
+    <h2>Friends 👥</h2>
+    <p>🔥 ShadowX</p>
+    <p>⚡ KillerPro</p>
+    <p>🎯 SniperGod</p>
+    <button>Add Friend</button>
+  </div>
+
+  <!-- COMMUNITY -->
+  <div class="card">
+    <h2>Community 🧠</h2>
+    <p>💬 Best guns in battle royale?</p>
+    <p>💬 Tips to reach Diamond rank</p>
+    <p>💬 New update discussion</p>
+    <button>Open Forum</button>
+  </div>
+
+  <!-- MESSAGES -->
+  <div class="card">
+    <h2>Messages 💬</h2>
+    <p>ShadowX: Ready for match?</p>
+    <p>KillerPro: Join squad now!</p>
+    <p>SniperGod: GG bro 🔥</p>
+    <button>Open Chat</button>
+  </div>
+
+</section>
+
+</body>
+</html> 
